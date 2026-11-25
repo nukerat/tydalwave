@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Stock Trading Simulator - TydalWave</title>
+  <meta name="description" content="A fast-paced trading simulation based on real 1-minute historical data.">
+  <meta name="theme-color" content="#e6e2d3">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='8' y='6' width='16' height='20' fill='%230b5d6b'/%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="stocks_style.css">
+</head>
+
+<body>
+
+  <header class="site-header">
+    <a class="logo" href="../index.html">TydalWave</a>
+
+    <nav>
+      <a href="../index.html#projects">Projects</a>
+      <a href="https://github.com/nukerat" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <section class="window window--game">
+      <h2 class="window-title">Stock Trading Simulator</h2>
+
+      <div id="game">
+        <div id="AAPL-chart"></div>
+        <div id="BTC-chart"></div>
+        <div id="ES-chart"></div>
+        <div id="MSFT-chart"></div>
+        <div id="NQ-chart"></div>
+        <div id="QQQ-chart"></div>
+        <div id="SPX-chart"></div>
+        <div id="SPY-chart"></div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="site-footer">
+    <span>© 2026</span>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/phaser@4.2.1/dist/phaser.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.5.3/papaparse.min.js"></script>
+<script src="https://cdn.plot.ly/plotly-3.1.0.min.js"></script>
+<script src="positions_window.js"></script>
+<script src="stocks_script.js"></script>
+<script src="market.js"></script>
+<script src="portfolio.js"></script>
+
+</body>
+</html>

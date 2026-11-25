@@ -1,0 +1,15 @@
+/* Game page: only what the simulator needs on top of ../style.css.
+   market.js places the charts with fixed pixel offsets inside #game, so keep
+   #game as the positioned parent and don't add overflow, transform or padding to it. */
+
+.window--game {
+  width: max-content;   /* the window wraps the 600px game exactly */
+}
+
+#game {
+  position: relative;
+}
+
+#game canvas {
+  display: block;       /* removes the small gap under an inline canvas */
+}
